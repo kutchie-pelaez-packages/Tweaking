@@ -9,8 +9,8 @@ public struct Tweak {
 
     public let id: ID
     public let args: [Key: Any]
-    
-    public struct ID: RawRepresentable, ExpressibleByStringLiteral {
+
+    public struct ID: RawRepresentable, ExpressibleByStringLiteral, Equatable {
         public typealias StringLiteralType = String
 
         public var rawValue: String

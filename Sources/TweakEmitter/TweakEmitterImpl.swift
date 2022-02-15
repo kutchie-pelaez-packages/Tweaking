@@ -7,7 +7,7 @@ final class TweakEmitterImpl: TweakEmitter {
     // MARK: - TweakEmitter
 
     func emit(_ tweak: Tweak) {
-        receivers.forEach { $0.receive(tweak: tweak) }
+        receivers.forEach { $0.receive(tweak) }
     }
 
     func register(_ receiver: TweakReceiver) {

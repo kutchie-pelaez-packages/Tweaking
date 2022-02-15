@@ -1,3 +1,3 @@
 public protocol TweakReceiver {
-    func receive(tweak: Tweak)
+    func receive(_ tweak: Tweak)
 }
