@@ -15,3 +15,7 @@ public struct TweakKey: Hashable, RawRepresentable, ExpressibleByStringLiteral {
         self.rawValue = value
     }
 }
+
+extension TweakKey {
+    public static var newValue: TweakKey { TweakKey() }
+}
