@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "Tweaks",
+    name: "Tweaking",
     platforms: [
         .iOS("15")
     ],
