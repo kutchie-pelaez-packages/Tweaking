@@ -9,15 +9,15 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "TweakEmitter",
+            name: "TweakEmitterImpl",
             targets: [
-                "TweakEmitter"
+                "TweakEmitterImpl"
             ]
         ),
         .library(
-            name: "Tweak",
+            name: "Tweaking",
             targets: [
-                "Tweak"
+                "Tweaking"
             ]
         )
     ],
@@ -26,12 +26,12 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "TweakEmitter",
+            name: "TweakEmitterImpl",
             dependencies: [
                 .product(name: "Core", package: "Core"),
-                .target(name: "Tweak")
+                .target(name: "Tweaking")
             ]
         ),
-        .target(name: "Tweak")
+        .target(name: "Tweaking")
     ]
 )

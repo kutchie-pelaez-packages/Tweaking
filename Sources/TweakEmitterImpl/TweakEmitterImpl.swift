@@ -1,5 +1,5 @@
 import Core
-import Tweak
+import Tweaking
 
 final class TweakEmitterImpl: TweakEmitter {
     private var receivers = WeakArray<TweakReceiver>()
